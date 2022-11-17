@@ -1,7 +1,6 @@
 /* Наші переваги */
 .benefits {
     @extend %section;
-    // padding: 94px 0;
 
     &__title {
         @extend %visually-hidden;
@@ -10,7 +9,7 @@
     &__list {
         display: flex;
         gap: 30px;
-        @extend %list
+        @extend %list;
     }
 
     &__item {

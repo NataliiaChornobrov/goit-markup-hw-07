@@ -12,54 +12,54 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-}
 
-.hero__title {
-    margin-top: 0;
-    margin-right: auto;
-    margin-bottom: 30px;
-    margin-left: auto;
-    width: 696px;
+    &__title {
+        margin-top: 0;
+        margin-right: auto;
+        margin-bottom: 30px;
+        margin-left: auto;
+        width: 696px;
+    
+        color: var(--white-text-color);
+    
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.4;
+        letter-spacing: 0.06em;
+    
+        text-transform: uppercase;
+    }
+    
+    &__button {
+        display: inline-block;
+        min-width: 216px;
+        height: 50px;
+        padding: 10px 32px;
 
-    color: var(--white-text-color);
+        color: var(--white-text-color);
+        background-color: var(--accent-text-color);
+        font-family: inherit;
 
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
-    letter-spacing: 0.06em;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.87;
+        align-items: center;
+        letter-spacing: 0.06em;
 
-    text-transform: uppercase;
-}
+        cursor: pointer;
 
-.hero__button {
-    display: inline-block;
-    min-width: 216px;
-    height: 50px;
-    padding: 10px 32px;
+        box-shadow: 0px 4px 4px var(--box-shadow-button);
+        border-radius: 4px;
+        border: 1px solid transparent;
 
-    color: var(--white-text-color);
-    background-color: var(--accent-text-color);
-    font-family: inherit;
+        transition-property: color, background-color, box-shadow;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    align-items: center;
-    letter-spacing: 0.06em;
-
-    cursor: pointer;
-
-    box-shadow: 0px 4px 4px var(--box-shadow-button);
-    border-radius: 4px;
-    border: 1px solid transparent;
-
-    transition-property: color, background-color, box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.hero__button:hover,
-.hero__button:focus {
-    color: var(--white-text-color);
-    background-color: var(--bg-color-hero-button);
+        &:hover,
+        &:focus {
+            color: var(--white-text-color);
+            background-color: var(--bg-color-hero-button);
+        }
+    }
 }
