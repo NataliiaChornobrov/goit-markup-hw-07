@@ -1,0 +1,92 @@
+/* Наша команда */
+.team {
+    display: flex;
+    text-align: center;
+
+    // padding: 94px 0;
+    @extend %section;
+    background: var(--additional-bg-color);
+
+    &__list {
+        display: flex;
+        gap: 30px;
+        @extend %list;
+    }
+
+    &__item {
+        background-color: var(--white-text-color);
+        box-shadow: var(--box-shadow-team-modal);
+        border-radius: 0px 0px 4px 4px;
+    }
+
+    &__info {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    &__title {
+        margin-top: 0;
+        margin-bottom: 10px;
+
+        color: var(--primary-text-color);
+
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.18;
+
+        letter-spacing: 0.03em;
+    }
+
+    &__text {
+        margin-top: 0;
+        margin-bottom: 16px;
+
+        color: var(--additional-text-color);
+
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.18;
+
+        letter-spacing: 0.03em;
+    }
+
+    &__net {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        @extend %list;
+    }
+}
+
+.team__net-link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-text-color);
+    }
+}
+
+.team__net-icon {
+    fill: var(--icon-color-team-clients);
+    cursor: pointer;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    .team__net-link:hover &,
+    .team__net-link:focus & {
+        fill: var(--white-text-color);
+    }
+}
